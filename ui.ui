@@ -134,7 +134,7 @@
       <item row="1" column="0">
        <widget class="QPushButton" name="push_skip">
         <property name="text">
-         <string>&lt; - </string>
+         <string>&lt; - Туда</string>
         </property>
        </widget>
       </item>
@@ -155,7 +155,7 @@
       <item row="1" column="2">
        <widget class="QPushButton" name="pushButton_next">
         <property name="text">
-         <string> - &gt;</string>
+         <string>Сюда - &gt;</string>
         </property>
        </widget>
       </item>

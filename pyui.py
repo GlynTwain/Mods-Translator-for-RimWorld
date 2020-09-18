@@ -3,7 +3,7 @@ from PyQt5 import QtCore, QtWidgets
 
 class Ui_RJM(object):
     def setupUi(self, RJM):
-        RJM.setObjectName("Mods Translator for RimWorld")
+        RJM.setObjectName("RJM")
         RJM.resize(781, 278)
         self.formLayoutWidget = QtWidgets.QWidget(RJM)
         self.formLayoutWidget.setGeometry(QtCore.QRect(10, 10, 761, 262))
@@ -94,17 +94,18 @@ class Ui_RJM(object):
 
     def retranslateUi(self, RJM):
         _translate = QtCore.QCoreApplication.translate
-        RJM.setWindowTitle(_translate("Mods Translator for RimWorld", "Dialog"))
-        self.pushButton_openfile.setText(_translate("Mods Translator for RimWorld", "Открыть файл"))
-        self.label_name_file.setText(_translate("Mods Translator for RimWorld", "--none--"))
-        self.label_tag_text.setText(_translate("Mods Translator for RimWorld", "Tag and num string:"))
-        self.label_tag.setText(_translate("Mods Translator for RimWorld", "--none--"))
-        self.label_original.setText(_translate("Mods Translator for RimWorld", "Original string:"))
-        self.label_translate_2.setText(_translate("Mods Translator for RimWorld", "Google Translate:"))
-        self.label_translate.setText(_translate("Mods Translator for RimWorld", "Final:"))
-        self.push_skip.setText(_translate("Mods Translator for RimWorld", "< - "))
-        self.pushButton_save.setText(_translate("Mods Translator for RimWorld", "Save string"))
-        self.pushButton_save_file.setText(_translate("Mods Translator for RimWorld", "Save full file"))
-        self.pushButton_next.setText(_translate("Mods Translator for RimWorld", " - >"))
-        self.pushButton_backup.setText(_translate("Mods Translator for RimWorld", "Backup"))
-        self.pushButton_AllTranslate.setText(_translate("Mods Translator for RimWorld", "All Translate"))
+        RJM.setWindowTitle(_translate("RJM", "Dialog"))
+        self.pushButton_openfile.setText(_translate("RJM", "Открыть файл"))
+        self.label_name_file.setText(_translate("RJM", "--none--"))
+        self.label_tag_text.setText(_translate("RJM", "Tag and num string:"))
+        self.label_tag.setText(_translate("RJM", "--none--"))
+        self.label_original.setText(_translate("RJM", "Original string:"))
+        self.label_translate_2.setText(_translate("RJM", "Google Translate:"))
+        self.label_translate.setText(_translate("RJM", "Final:"))
+        self.push_skip.setText(_translate("RJM", "< - Туда"))
+        self.pushButton_save.setText(_translate("RJM", "Save string"))
+        self.pushButton_save_file.setText(_translate("RJM", "Save full file"))
+        self.pushButton_next.setText(_translate("RJM", "Сюда - >"))
+        self.pushButton_backup.setText(_translate("RJM", "Backup"))
+        self.pushButton_AllTranslate.setText(_translate("RJM", "All Translate"))
+

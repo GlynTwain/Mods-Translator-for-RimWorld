@@ -87,13 +87,9 @@ def string_save():
     translation_str = ui.lineEdit_translate.text()
     if final_str != "":
         mydicDate[key] = final_str
-        print(final_str)
-        print("Сохранён из финальной строки")
     elif final_str == "" and translation_str != "":
         mydicDate[key] = translation_str
         ui.lineEdit.setText(translation_str)
-        print(translation_str)
-        print("Сохранён из переводчика")
     else:
         print("Error:Save: Ошибка срок")
 
