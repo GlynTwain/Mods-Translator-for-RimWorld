@@ -41,9 +41,7 @@ def selectMyfile():
     tree = ET.parse(file_path)
     ui.label_name_file.setText(file_path)
 
-    # file = open(file_path,encoding="utf-8",mode='r')
-
-    if auto_backup: backup_file()
+    if auto_backup: backup_file() #
 
     root = tree.getroot()
     for child in root: mydicDate[child.tag] = child.text
@@ -91,13 +89,11 @@ def string_save():
         mydicDate[key] = final_str
         print(final_str)
         print("Сохранён из финальной строки")
-        # write_file(mydicDate, score, key, final_str)
     elif final_str == "" and translation_str != "":
         mydicDate[key] = translation_str
         ui.lineEdit.setText(translation_str)
         print(translation_str)
         print("Сохранён из переводчика")
-        # write_file(mydicDate, score, key, translation_str)
     else:
         print("Error:Save: Ошибка срок")
 
@@ -110,20 +106,11 @@ def write_file():
     version = "1.0"
     encoding = "utf-8"
 
-    # file = open()
-
     for key in mydicDate:
         for child in root:
             if key == child.tag:
                 child.text = str(mydicDate[key])
     tree.write("Final_Text.xml", encoding=encoding)
-    pass
-
-
-def file_Save():
-    """Сохранить файл"""
-    global mydicDate
-    # mydicDate.clear()
     pass
 
 
@@ -145,10 +132,6 @@ def get_key(d, value):
     for k, v in d.items():
         if v == value:
             return k
-
-
-def check_string():
-    pass
 
 
 def Refresh_Date():
